@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TestForms';
+
+  public save({valid,value}:{valid:boolean|null,value:any}) {
+    alert(JSON.stringify(value));
+  }
 }
