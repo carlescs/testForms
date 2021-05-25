@@ -1,0 +1,4 @@
+<div class="d-flex flex-row">
+<app-my-text-box #input class="flex-grow-1" [(ngModel)]="value" (ngModelChange)="change($event)"></app-my-text-box>
+  <button type="button" class="btn btn-danger" (click)="eventClicked()">Hola</button>
+</div>

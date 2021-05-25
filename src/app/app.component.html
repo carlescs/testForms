@@ -1,13 +1,22 @@
 <div class="container">
   <h1>{{title}}</h1>
+  <h2>{{title2}}</h2>
 
   <form #form="ngForm" (ngSubmit)="save(form)" novalidate>
     <div class="mb-3">
       <label for="input" class="form-label">Hola</label>
       <input type="text" class="form-control" id="input" name="input" [(ngModel)]="title" autocomplete="off" required/>
     </div>
+    <div class="mb-3">
+      <label for="input2" class="form-label">Hola2</label>
+      <app-my-text-box id="input2" name="input2" [(ngModel)]="title2" required></app-my-text-box>
+    </div>
+    <div class="mb-3">
+      <label for="input3" class="form-label">Hola3</label>
+      <app-textbox-plus-button id="input3" name="input3" [(ngModel)]="title3" required (buttonClicked)="buttonClicked()"></app-textbox-plus-button>
+    </div>
     <p>
-      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Send</button>
+      <button type="submit" class="btn btn-primary">Send</button>
     </p>
   </form>
 </div>

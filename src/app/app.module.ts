@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
+import { MyTextBoxComponent } from './components/my-text-box/my-text-box.component';
+import { TextboxPlusButtonComponent } from './components/textbox-plus-button/textbox-plus-button.component';
 
 @NgModule({
   imports: [
@@ -10,7 +12,9 @@ import {FormsModule} from '@angular/forms';
     FormsModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    MyTextBoxComponent,
+    TextboxPlusButtonComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
